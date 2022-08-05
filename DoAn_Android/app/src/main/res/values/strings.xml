@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">N14 Sneaker</string>
+
+    <!--to toggle the open close button
+        of the navigation drawer-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

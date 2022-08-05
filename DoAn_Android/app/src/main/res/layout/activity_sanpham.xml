@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SanphamActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_danhmuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTrangchu"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/btn_mua"
+            android:text="Trang chủ"
+            android:textSize="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNew"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/btn_mua"
+
+            android:text="New"
+            android:textSize="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBalenciaga"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/btn_mua"
+
+            android:text="Balenciaga"
+            android:textSize="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVans"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:background="@drawable/btn_mua"
+            android:text="Vans"
+            android:textSize="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNike"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:background="@drawable/btn_mua"
+            android:text="Nike"
+            android:textSize="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_danhmuc"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_sanpham"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</RelativeLayout>

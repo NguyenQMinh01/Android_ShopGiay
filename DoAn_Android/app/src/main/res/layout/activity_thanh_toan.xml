@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThanhToanActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/txtPhoneTT"
+                android:drawableLeft="@drawable/ic_baseline_smartphone_24"
+                android:hint="Nhập số điện thoại"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/txtNameTT"
+                android:drawableLeft="@drawable/ic_baseline_account_box_24"
+                android:hint="Tên người nhận"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/txtEmailTT"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+
+                android:hint="Nhập Email"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/txtAddressTT"
+                android:hint="Địa chỉ nhận hàng"
+                android:drawableLeft="@drawable/ic_baseline_add_location_alt_24"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="290dp"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="280dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textAlignment="viewEnd"
+                android:textSize="19dp"
+                android:text="Tổng thanh toán:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtTienThanhToan"
+                android:textAlignment="viewEnd"
+                android:textSize="19dp"
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDatHang"
+                android:textStyle="bold"
+                android:background="@drawable/btn_mua"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Đặt hàng"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

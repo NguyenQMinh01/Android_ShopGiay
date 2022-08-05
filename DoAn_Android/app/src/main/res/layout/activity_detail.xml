@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageView_detail"
+        android:layout_width="match_parent"
+        android:layout_height="260dp" />
+
+    <ImageButton
+        android:id="@+id/imageView_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/img_back" />
+
+    <FrameLayout
+        android:id="@+id/frame_cart"
+        android:layout_width="60dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="10dp">
+
+        <com.nex3z.notificationbadge.NotificationBadge
+            android:id="@+id/badge_soluong"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="top|right">
+
+        </com.nex3z.notificationbadge.NotificationBadge>
+
+        <ImageButton
+            android:id="@+id/ibtn_Cart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_baseline_shopping_cart_24" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textViewDetail_giasanpham"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView_detail"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Gia san pham"
+        android:textColor="#FF0000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textViewDetail_tensanpham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDetail_giasanpham"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="TextView"
+        android:textSize="15dp" />
+    <LinearLayout
+        android:id="@+id/layou_linearSL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textViewDetail_tensanpham"
+        >
+        <TextView
+            android:id="@+id/textViewDetail_motasanpham"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDetail_tensanpham"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="Số lượng:" />
+        <TextView
+            android:id="@+id/txtSoLuongSP"
+            android:text="0"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_Detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layou_linearSL"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="5sp"
+        android:background="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:enabled="false"
+                android:text="Số lượng:"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnTru"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/icon_tru" />
+
+            <TextView
+                android:id="@+id/textView_Soluong"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnCong"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/icon_cong" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnThemvaogiohang"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/btn_mua"
+                android:text="Thêm vào giỏ hàng"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
